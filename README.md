@@ -1,97 +1,70 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# To Do App
+Created to learn `React Native` functionalities.
 
-# Getting Started
+Inspired by Microsoft To Do + the need to streamline task management by reducing reliance of multiple tools.
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+---
 
-## Step 1: Start Metro
+### Key Features
+<ol>
+  <li><b>Default Task Operations</b>: Add, delete, and edit tasks.</li>
+  <li><b>Task Management</b>: Move tasks into different lists for better organization.</li>
+  <li><b>Completed Tasks</b>: Displays tasks that have been completed.</li>
+  <li><b>Starred Tasks</b>: Mark tasks as important for easy access.</li>
+  <li><b>Deleted Tasks</b>: Temporary storage before being permanently deleted.</li>
+  <li><b>Notes</b>: To manage notes related to tasks.</li>
+  <li><b>Settings</b>: Options for customizing the app including dark/light mode selection.</li>
+  <li><b>Access Control</b>: Admins need to log-in to review feedback from users.</li> 
+  <li><b>Feedback System</b>: A feature for users to provide feedback and suggestion for app improvement.</li>
+  <li><b>Smooth Navigation</b>: A drawer navigation is provided to guide through the screens.</li>
+  <li><b>Global Chat Feature</b>: A chat function allowing users to communicate and connect with each other within the app.</li>
+  <li><b>Easy Management of Feedback</b>: Admins can click a button to remove resolved feedback in the feedback list.</li>
+  <li><b>Calendar Integration</b>: Review dates on a calendar on the app.</li>
+</ol>
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+---
 
-To start the Metro dev server, run the following command from the root of your React Native project:
-
-```sh
-# Using npm
-npm start
-
-# OR using Yarn
-yarn start
-```
-
-## Step 2: Build and run your app
-
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
-
-### Android
-
-```sh
-# Using npm
-npm run android
-
-# OR using Yarn
-yarn android
-```
-
-### iOS
-
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
-
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
-
-```sh
-bundle install
-```
-
-Then, and every time you update your native dependencies, run:
-
-```sh
-bundle exec pod install
-```
-
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
-
-```sh
-# Using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
-```
-
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
-
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
-
-## Step 3: Modify your app
-
-Now that you have successfully run the app, let's make changes!
-
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
-
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
-
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+### Screens
+<ol>
+  <li> Home </br>
+    <img width="303" height="576" alt="image" src="https://github.com/user-attachments/assets/0d9245e4-5b5b-43eb-b7f0-7f1eab480d48" />
+  </li>
+  <li> Edit </br>
+    <img width="306" height="552" alt="image" src="https://github.com/user-attachments/assets/f3601e6d-6b8e-4bdb-9d17-7899075b0588" />
+  </li>
+  <li> Completed: uncheck will move it back to home </br>
+    <img width="319" height="566" alt="image" src="https://github.com/user-attachments/assets/6351bb93-9d43-4edf-96c5-805fb43a8c64" />
+  </li>
+  <li> Starred: unstarred will remove it from the list </br>
+    <img width="304" height="568" alt="image" src="https://github.com/user-attachments/assets/a4fb225f-9c22-4965-86d8-27082f58411d" />
+  </li> 
+  <li> Deleted: clicking delete again will permanently delete it </br>
+    <img width="309" height="574" alt="image" src="https://github.com/user-attachments/assets/8856afa2-03cd-4603-92ed-0b2635edc6e8" />
+  </li>
+  <li> Notes: remains intact after refresh </br>
+    <img width="300" height="562" alt="image" src="https://github.com/user-attachments/assets/305fdc2c-edaf-45af-a6d4-9b2d45fb23c5" />
+  </li>
+  <li> Feedback: bug/improvement/feature_request types </br>
+    <img width="299" height="541" alt="image" src="https://github.com/user-attachments/assets/ce9ab22d-459e-4fac-aa97-9f3470f79dac" /> </br>
+    <img width="316" height="429" alt="image" src="https://github.com/user-attachments/assets/673a7ef1-1737-44c5-a0fe-187dc0d9800c" />
+  </li>
+  <li> Admin Login </br>
+    <img width="323" height="601" alt="image" src="https://github.com/user-attachments/assets/70adcc13-6c25-4620-ae8e-df0080f3ca96" />
+  </li>
+  <li> Feedback listing </br>
+    <img width="316" height="591" alt="image" src="https://github.com/user-attachments/assets/55266129-91f3-47df-b42c-b0825465d570" />
+  </li>
+  <li> Settings: dark theme applies to all screens </br>
+     `createContext` & `useContext`</br>
+    <img width="313" height="588" alt="image" src="https://github.com/user-attachments/assets/ee8b167b-ef61-47ed-866d-47d9244ff6fe" /> </br>
+    <img width="320" height="590" alt="image" src="https://github.com/user-attachments/assets/8c7fcd09-65d0-405b-8483-e3231310503e" />
+  </li>
+  <li> Chat </br>
+    `socket.io-client` </br>
+    <img width="303" height="578" alt="image" src="https://github.com/user-attachments/assets/b14d0a12-93c8-40ed-a514-bde93d8fc689" />
+  </li>
+  <li> Calendar </br>
+    `react-native-calendars` </br>
+    <img width="307" height="561" alt="image" src="https://github.com/user-attachments/assets/5611b38e-b4e0-46f5-8142-e42125d05a53" />
+  </li>
+</ol>
